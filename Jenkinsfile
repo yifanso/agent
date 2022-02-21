@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        node(label: '001')
+        echo 'step1'
       }
     }
 
     stage('test') {
       steps {
-        sh 'echo \'start run!\''
+        echo 'step 2'
       }
     }
 
